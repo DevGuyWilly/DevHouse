@@ -9,11 +9,11 @@
     /* background-image: linear-gradient(#141e30 , #243b55); */
     /* height: 100vh; */
     /* color: white; */
-    padding: 25px;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     border-bottom: 1px solid gray;
 }
 .logo{
@@ -96,12 +96,12 @@
 }
 /* -------------- */
 .category{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 50px;
 }
 .category ul li{
     background-color: brown;
-    padding: 20px;
+    padding: 10px;
     margin-right: 10px;
     border-radius: 15px;
     border: none;
@@ -113,6 +113,7 @@
     align-items: center;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .language{
     display: flex;
@@ -120,4 +121,31 @@
     align-items: center;
     font-size: 20px;
     font-weight: bold;
+}
+.allCategories{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* -------------- */
+.job-listing{
+    /* border: 1px solid red; */
+    padding: 0px 150px;
+    margin-top: 40px;
+}
+.job-listing input{
+    width: 100%;
+    padding: 30px;
+    border: 2px solid gray;
+    font-size: 30px;
+}
+.jobListing{
+    margin-top: 30px;
+    height: 300px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
