@@ -86,7 +86,7 @@ body{
 .hero-text{
     /* border: 1px solid red; */
     /* font-size: 50px; */
-    width: 55%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     /* padding: 40px; */
@@ -119,10 +119,10 @@ body{
     width: 25%;
     padding: 15px;
     font-weight: bold;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     font-size: 25px;
     background-color: brown;
     color: white;
@@ -149,6 +149,7 @@ body{
     cursor: pointer;
     border: none;
     color: white;
+    border-radius: 10px;
 }
 /* -------------- */
 .location{
@@ -167,6 +168,7 @@ body{
     /* padding: 10px; */
     display: flex;
     cursor: pointer;
+    border-radius: 10px;
 }
 .location ul{
     display: flex;
@@ -188,6 +190,7 @@ body{
     /* padding: 10px; */
     display: flex;
     cursor: pointer;
+    border-radius: 10px;
 }
 .language ul{
     display: flex;
@@ -340,5 +343,13 @@ body{
         /* border: 1px solid red; */
         display: grid;
         grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:418px) {
+    .hero-text h2{
+        font-size: 35px;
+    }
+    .hero-text p {
+        font-size: 25px;
     }
 }
