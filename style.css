@@ -24,6 +24,7 @@ body{
 .logo{
     /* border: 1px solid red; */
 }
+
 .logo h2{
     font-size: 30px;
 }
@@ -110,24 +111,34 @@ body{
 }
 .hero-text form input{
     width: 70%;
-    padding: 10px;
+    padding: 15px;
     font-size: 25px;
     border: 1px solid gray;
 }
 .hero-text form button{
     width: 25%;
-    padding: 10px;
+    padding: 15px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 25px;
     background-color: brown;
     color: white;
     border: 1px solid brown;
+    cursor: pointer;
+}
+.subBtn{
+    
 }
 /* -------------- */
 .category{
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 20px;
+    display: flex;
+    flex-direction: column
 }
 .category ul li{
     background-color: brown;
@@ -135,13 +146,14 @@ body{
     margin-right: 10px;
     /* margin-bottom: 10px; */
     /* border-radius: 10px; */
-    
+    cursor: pointer;
     border: none;
     color: white;
 }
 /* -------------- */
 .location{
     display: flex;
+    flex-direction: column;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -154,6 +166,7 @@ body{
     list-style-type: none;
     /* padding: 10px; */
     display: flex;
+    cursor: pointer;
 }
 .location ul{
     display: flex;
@@ -163,6 +176,7 @@ body{
 /* -------------- */
 .language{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px;
@@ -173,6 +187,7 @@ body{
     list-style-type: none;
     /* padding: 10px; */
     display: flex;
+    cursor: pointer;
 }
 .language ul{
     display: flex;
@@ -183,6 +198,7 @@ body{
 .allCategories{
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px;
@@ -278,4 +294,51 @@ body{
     background-color: brown;
     color: white;
     border: 1px solid brown;
+}
+
+/* --------- */
+/* MEDIA-QUERIES */
+@media screen and (max-width: 1040px) {
+    .hero-text form{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-text form input{
+        width: 100%;
+    }
+    .hero-text form button{
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 939px) {
+    .nav_item{
+        display: none;
+    }
+}
+@media screen and (max-width:899px) {
+    .location ul{
+        margin-top: 10px;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (max-width: 547px) {
+    .allCategories ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (max-width:474px) {
+    .subBtn{
+        width: 100%;
+    }
+    .location ul{
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
