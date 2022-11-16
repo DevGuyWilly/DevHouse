@@ -15,10 +15,10 @@
             </h2>
         </div>
         <div class="nav_item">
-            <ul>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">Find a Job</a></li>
-                <li><a href="#">Find Talent</a></li>
+            <ul class="list_item">
+                <li><a class="navButton show-modal" href="#">Wait-List</a></li>
+                <li><a class="navButton" href="#">Find a Job</a></li>
+                <li><a class="navButton" href="#">Find Talent</a></li>
                 <li><a class="navButton" href="#">Add a Job</a></li>
             </ul>
         </div>
@@ -42,7 +42,7 @@
             <h3>
                 LOCATION:
             </h3>
-            <ul>
+            <ul class="location_list">
                 <li>Remote</li>
                 <li>Berlin</li>
                 <li>Amsterdam</li>
@@ -79,17 +79,23 @@
         <input type="search" placeholder="Type here to search">
         <!-- ---------------------- -->
         <div class="jobListing">
-            
-        </div>
-        <div class="jobListing">
-
-        </div>
-        <div class="jobListing">
-
-        </div>
-        <div class="jobListing">
-
         </div>
     </div>
+
+    <!-- -------MODAL----------- -->
+    <div class="overlay hidden">
+
+    </div>
+
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>JOIN OUR WAIT-LIST NOW</h1>
+        <form action="">
+            <input type="email" placeholder="Your Email">
+            <button>Subscribe</button>
+        </form>
+    </div>
+
+    <script src="/app.js"></script>
 </body>
 </html>
