@@ -1,5 +1,3 @@
-//Fetch API
-
 "use strict";
 
 const modal = document.querySelector(".modal");
@@ -29,3 +27,6 @@ const closeModal = (param) => {
 openModal(btnOpenModal);
 closeModal(btnCloseModal);
 closeModal(overlay);
+
+// //Fetch API
+// fetch("https://api.adzuna.com/v1/api").then((response) => response.json);
